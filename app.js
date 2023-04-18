@@ -2,6 +2,8 @@ window.addEventListener("load", () => {
     let long;
     let lat;
     let temperatureDescription = document.querySelector(".temperature-description");
+    let humidity = document.querySelector(".humidity-per");
+    let speed = document.querySelector(".speed");
     let temperatureDegree = document.querySelector(".temperature-degree");
     let locationTimezone = document.querySelector(".location-timezone");
     let temperatureSection = document.querySelector(".temperature");
@@ -28,6 +30,8 @@ window.addEventListener("load", () => {
                     const temp = data.main.temp;
                     temperatureDegree.textContent = temp;
                     temperatureDescription.textContent = data.weather[0].description;
+                    humidity.textContent = data.main.humidity;
+                    speed.textContent = data.wind.speed;
                     locationTimezone.textContent = data.name;
 
                     // Formula for celcius

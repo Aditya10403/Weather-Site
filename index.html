@@ -5,27 +5,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Weather</title>
 </head>
 
 <body>
-  <div class="location">
-    <h1 class="location-timezone">Timezone</h1>
-    <img class="icon" width="128" height="128"></img>
-  </div>
-
-  <div class="temperature">
-    <div class="degree-section">
-      <h2 class="temperature-degree">34</h2>
-      <span>F</span>
+  <div class="rectangle">
+    <div class="location">
+      <p class="Weather">Weather for <strong class="location-timezone">Timezone</strong></p>
+      <img class="icon" width="100" height="100" src="Default.jpg"></img>
     </div>
-    
-    <div class="temperature-description">It's frigging Cold</div>
+    <div class="temperature">
+      <div class="degree-section">
+        <h2 class="temperature-degree">34</h2>
+        <span>F</span>
+      </div>
+    </div>
+    <div class="description">
+      <div class="temperature-description">It's frigging Cold</div>
+      <p class="humidity">Humidity: <strong class="humidity-per">60</strong>%</p>
+      <div class="Wind-Speed"><strong class="speed">6.3</strong> km/hr</div>
+    </div>
   </div>
 </body>
-
-<script src="skycons.js"></script>
 <script src="app.js"></script>
 
 </html>
