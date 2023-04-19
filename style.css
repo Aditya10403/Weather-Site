@@ -5,6 +5,8 @@
 }
 
 body {
+    font-family: 'Poppins',Arial;
+    position: relative;
     background: url('Default.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -16,32 +18,31 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 700px;
-    height: 500px;
-    left: 182px;
-    top: 12%;
-    padding: 30px;
+    width: 530px;
+    height: 350px;
+    left: 150px;
+    top: 100px;
+    padding: 20px;
     background: rgba(35, 34, 34, 0.7);
     border-radius: 39px;
 }
 
 .Weather,
 .location-timezone {
-    width: 500px;
-    height: 48px;
-    font-family: 'Poppins';
-    font-style: medium;
+    
     font-weight: 500;
-    font-size: 36px;
-    line-height: 48px;
-    /* identical to box height */
+    font-size: 28px;
     color: #FFFFFF;
-    padding-top: 25px;
-   
+}
+
+.location-timezone {
+    font-weight: 700;
 }
 
 .location {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .degree-section {
@@ -51,11 +52,8 @@ body {
 h2,
 span {
     padding: 5px;
-    height: 48px;
-    font-family: 'Poppins';
     font-weight: 400;
-    font-size: 32px;
-    /* identical to box height */
+    font-size: 24px;
     color: #FFFFFF;
     
 }
@@ -65,21 +63,15 @@ span {
 .speed,
 .humidity,
 .humidity-per {
-    width: 400px;
-    height: 36px;
-    line-height: 36px;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 300;
-    font-size: 24px;
-
+    font-size: 16px;
     color: #FFFFFF;
 }
 
 .description {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .temperature {
