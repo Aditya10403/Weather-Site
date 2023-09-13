@@ -10,25 +10,8 @@ let input = document.getElementById("input");
 let api_key = "1d509ee9c64c3f79d8b44cb27257bce0";
 
 window.addEventListener("load", () => {
-  // setIcons("PARTLY_CLOUDY_DAY", "white");
-  // let lon, lat, loc;
-  // if (navigator.geolocation) {
-  //   navigator.geolocation.getCurrentPosition(async (position) => {
-  //     lon = position.coords.longitude;
-  //     lat = position.coords.latitude;
-  //     const api_1 = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api_key}&units=metric`;
-  //     let gdata = await fetch(api_1);
-  //     let jdata = await gdata.json();
-  //     loc = jdata.name;
-  //     console.log(loc);
-  //     data(loc);
-  //   });
-  // }
-});
-window.onload = () => {
   setIcons("PARTLY_CLOUDY_DAY", "white");
   let lon, lat, loc;
-
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(async (position) => {
       lon = position.coords.longitude;
@@ -41,7 +24,8 @@ window.onload = () => {
       data(loc);
     });
   }
-};
+});
+
 const data = async function (search) {
   let getdata = await fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${api_key}&units=metric`
