@@ -1,4 +1,5 @@
 # Weather-Site
-This site is for current living location.
-It may not work some time, but i will resolve the issues asap.
-Also i will make it better in some instances.
+The site gives you your current live location as well as searched location weather details.
+It also gives alert for wrong input location or no input search.
+
+It is a minor project right now.
