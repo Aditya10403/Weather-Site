@@ -100,6 +100,7 @@ footer {
   display: flex;
   margin-top: 8px;
   width: 70%;
+  transition: all 0.5s ease-in-out;
 }
 #input {
   display: flex;
@@ -141,11 +142,11 @@ footer {
 }
 @media only screen and (max-width: 660px) {
   .rectangle {
-    width: 400px;
+    width: 350px;
     height: 480px;
     left: 40px;
   }
-  .icon {
-    margin-right: 14px;
+  .Search{
+    width: 80%;
   }
 }

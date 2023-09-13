@@ -10,8 +10,25 @@ let input = document.getElementById("input");
 let api_key = "1d509ee9c64c3f79d8b44cb27257bce0";
 
 window.addEventListener("load", () => {
+  // setIcons("PARTLY_CLOUDY_DAY", "white");
+  // let lon, lat, loc;
+  // if (navigator.geolocation) {
+  //   navigator.geolocation.getCurrentPosition(async (position) => {
+  //     lon = position.coords.longitude;
+  //     lat = position.coords.latitude;
+  //     const api_1 = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api_key}&units=metric`;
+  //     let gdata = await fetch(api_1);
+  //     let jdata = await gdata.json();
+  //     loc = jdata.name;
+  //     console.log(loc);
+  //     data(loc);
+  //   });
+  // }
+});
+window.onload = () => {
   setIcons("PARTLY_CLOUDY_DAY", "white");
   let lon, lat, loc;
+
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(async (position) => {
       lon = position.coords.longitude;
@@ -24,14 +41,15 @@ window.addEventListener("load", () => {
       data(loc);
     });
   }
-});
-
+};
 const data = async function (search) {
   let getdata = await fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${api_key}&units=metric`
-  ); //try imperial
+  );
+
   let jsondata = await getdata.json();
   console.log(jsondata);
+
   if (jsondata.cod == 404) {
     alert("!Please Enter correct Location");
     changeBGImage("DEFAULT");
@@ -46,6 +64,7 @@ const data = async function (search) {
     alert("!Please First enter location");
     return;
   }
+
   locationtimezone.innerHTML = jsondata.name;
   let temp = jsondata.main.temp;
   temperature.textContent = Math.floor(temp);
@@ -53,8 +72,7 @@ const data = async function (search) {
   humidity.innerHTML = jsondata.main.humidity;
   speed.innerHTML = jsondata.wind.speed;
   let icon_code = jsondata.weather[0].icon;
-  // icon.innerHTML = jsondata.weather[0].icon;
-  // icon_id - 50d , icon - .icon
+
   let icon_id;
   let color_code;
 
@@ -80,8 +98,10 @@ const data = async function (search) {
   } else if (icon_code == "50d" || icon_code == "50n") {
     icon_id = "FOG";
   }
+
   let img_code;
   color_code = colour(icon_code[2]);
+
   function colour(color_code) {
     if (color_code == "d") {
       img_code = icon_id;
@@ -91,8 +111,10 @@ const data = async function (search) {
       return "black";
     }
   }
+
   setIcons(icon_id, color_code);
   changeBGImage(img_code);
+
   let farh = temp * (9 / 5) + 32;
   temperatureSection.addEventListener("click", () => {
     if (temperatureSpan.textContent === "°C") {
@@ -104,16 +126,19 @@ const data = async function (search) {
     }
   });
 };
+
 function openFun() {
   search = input.value;
   data(search);
 }
+
 function setIcons(icon_id, color_code) {
   const skycons = new Skycons({ color: color_code });
   const currentIcon = icon_id;
   skycons.play();
   return skycons.set(document.querySelector(".icon"), Skycons[currentIcon]);
 }
+
 function changeBGImage(backgrnd) {
   document.body.style = `
   background: url('photos/${backgrnd}.jpg');
