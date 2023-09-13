@@ -6,6 +6,7 @@
 body {
   font-family: "Poppins", Arial;
   position: relative;
+  min-height: 100vh;
   background: url("photos/DEFAULT.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -82,12 +83,13 @@ footer a {
 }
 footer {
   position: absolute;
+  display: flex;
   background: #1f2833;
-  width: 100%;
-  height: 7vh;
-  padding-top: 10px;
-  top: 94vh;
-  text-align: center;
+  width: 100vw;
+  height: 7%;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon {
@@ -141,7 +143,7 @@ footer {
   .rectangle {
     width: 400px;
     height: 480px;
-    left: 70px;
+    left: 40px;
   }
   .icon {
     margin-right: 14px;
