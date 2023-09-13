@@ -10,20 +10,27 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap"
     rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f4f2f592f2.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <title>Weather</title>
 </head>
 
-<body>
+<body id="bg">
   <div class="rectangle">
+    <div class="Search">
+      <input id="input" type="text" value="" placeholder="Search location ...">
+      <button onclick="openFun()" class="search-button">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      </button>
+    </div>
     <div class="location">
       <p class="Weather">Weather for <strong class="location-timezone">Timezone</strong></p>
-      <img class="icon" width="100" height="100" src="Default.jpg"></img>
+      <canvas class="icon" width="128" height="128"></canvas>
     </div>
     <div class="temperature">
       <div class="degree-section">
         <h2 class="temperature-degree">34</h2>
-        <span>F</span>
+        <span>°C</span>
       </div>
     </div>
     <div class="description">
@@ -32,7 +39,14 @@
       <div class="Wind-Speed"><strong class="speed">6.3</strong> km/hr</div>
     </div>
   </div>
+  <div class="copyright">
+    <a href="https://aditya10403.github.io/My-Portfolio-website/">
+      <p>Copyright © Aditya.</p>
+    </a>
+  </div>
+  <script src="skycons.js"></script>
+  <script src="app.js"></script>
 </body>
-<script src="app.js"></script>
+
 
 </html>
