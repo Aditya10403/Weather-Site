@@ -110,9 +110,15 @@ const data = async function (search) {
     }
   });
 };
-
+input.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    data(input.value);
+  }
+});
 function openFun() {
   search = input.value;
+
   data(search);
 }
 
