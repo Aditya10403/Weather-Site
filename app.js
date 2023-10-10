@@ -10,6 +10,7 @@ let input = document.getElementById("input");
 let api_key = "1d509ee9c64c3f79d8b44cb27257bce0";
 
 window.addEventListener("load", () => {
+  alert("Please Turn On Location!");
   setIcons("PARTLY_CLOUDY_DAY", "white");
   let lon, lat, loc;
   if (navigator.geolocation) {
@@ -35,7 +36,7 @@ const data = async function (search) {
   console.log(jsondata);
 
   if (jsondata.cod == 404) {
-    alert("!Please Enter correct Location");
+    alert("Please Enter correct Location");
     changeBGImage("DEFAULT");
     locationtimezone.innerHTML = "Timezone";
     temperature.innerHTML = "30";
