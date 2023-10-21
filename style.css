@@ -115,28 +115,27 @@ input {
   font-family: "Poppins", "sans-serif";
   display: flex;
   flex-basis: 0;
-  padding-left: 15px;
+  padding-inline: 15px;
   width: 50%;
   flex: 1;
-  height: 36px;
+  height: 40px;
   font-size: 14px;
-  border: 1px solid rgb(103, 102, 102);
-  border-top-left-radius: 18px;
-  border-bottom-left-radius: 18px;
+  border-radius: 20px;
+  border: none;
 }
 input:focus {
   outline: none;
 }
 
 .search-button {
-  border: 1px solid;
-  height: 36px;
-  width: 66px;
-  border-top-right-radius: 18px;
-  border-bottom-right-radius: 18px;
-  border: 1px solid rgb(103, 102, 102);
-  margin-left: -1px;
-  margin-right: 10px;
+  margin-left: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+}
+.search-button:active{
+  transform: scale(0.8);
 }
 @media only screen and (max-width: 760px) {
   .rectangle {
