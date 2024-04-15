@@ -27,7 +27,7 @@ Welcome to My Weather Website, your go-to destination for accurate weather forec
 
 ## About Us
 
-My Weather Website is dedicated to providing reliable weather forecasts to users worldwide. Our team works tirelessly to ensure that you receive up-to-date and accurate weather information whenever you need it.
+My Weather Website is dedicated to providing reliable weather forecasts to users worldwide.
 
 ## Disclaimer
 
