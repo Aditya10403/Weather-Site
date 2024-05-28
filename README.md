@@ -45,8 +45,8 @@ Follow these steps to set up the project locally on your machine.
 
 Make sure you have the following installed on your machine:
 
-- [Git](https://git-scm.com/) # optional
-- [Node.js](https://nodejs.org/en)
+- A modern web browser (e.g., Chrome, Edge).
+- liveserver extension for `VS code` users.
 
 **Cloning the Repository**
 
@@ -59,7 +59,7 @@ cd Weather-Site
 
 - run with `liveserver` 
 
-- Open [http://127.0.0.1:5501/](http://127.0.0.1:5501/) in your browser to view the project.
+- open [http://127.0.0.1:5501/](http://127.0.0.1:5501/) in your browser to view the project.
 
 **How to Use**
 
