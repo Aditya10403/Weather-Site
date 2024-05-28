@@ -1,8 +1,8 @@
 <div align="center">
 <h3 align="center">Live weather site</h3>
       <img src="photos/default.jpeg" alt="Project Banner" width="600" height="250">
-      <img src="photos/rain.jpeg" alt="Project Banner" width="600" height="250">
-      <img src="photos/night.jpeg" alt="Project Banner" width="600" height="250">
+      <img src="photos/rain.jpeg" alt="Project Banner" width="800" height="280">
+      <img src="photos/night.jpeg" alt="Project Banner" width="800" height="280">
   <br />
 
   <!-- <div>
@@ -51,15 +51,15 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/Aditya10403/HavenlyHomes.git
-cd portfolio
+git clone https://github.com/Aditya10403/Weather-Site.git
+cd Weather-Site
 ```
 
 **Running the Project**
 
 - run with `liveserver` 
 
-- or Open [http://127.0.0.1:5501/](http://127.0.0.1:5501/) in your browser to view the project.
+- Open [http://127.0.0.1:5501/](http://127.0.0.1:5501/) in your browser to view the project.
 
 **How to Use**
 
