@@ -1,8 +1,8 @@
 <div align="center">
 <h3 align="center">Live weather site</h3>
-      <img src="photos/default.jpeg" alt="Project Banner" width="600" height="200">
-      <img src="photos/rain.jpeg" alt="Project Banner" width="600" height="200">
-      <img src="photos/night.jpeg" alt="Project Banner" width="600" height="200">
+      <img src="photos/default.jpeg" alt="Project Banner" width="600" height="250">
+      <img src="photos/rain.jpeg" alt="Project Banner" width="600" height="250">
+      <img src="photos/night.jpeg" alt="Project Banner" width="600" height="250">
   <br />
 
   <!-- <div>
